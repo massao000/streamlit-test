@@ -3,7 +3,8 @@ import os
 import glob
 import uuid
 
-b1 = st.button("test")
+b1 = st.button("作成")
+b2 = st.button("消去")
 
 if b1:
     x = str(uuid.uuid1())
