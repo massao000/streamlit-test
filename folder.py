@@ -20,5 +20,5 @@ if b2:
 st.write(glob.glob(f'{os.path.dirname(__file__)}'))
 st.write(glob.glob("scr/*"))
 st.write(glob.glob("test/*"))
-for i in glob.glob("scr/*"):
+for i in glob.glob("scr/*.mp"):
     st.audio(i)
