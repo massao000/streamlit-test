@@ -10,7 +10,7 @@ st.audio(file)
 st.write(file)
 if b1:
     x = str(uuid.uuid1())
-    with open(f"scr/{x}", 'w') as f:
+    with open(f"scr/{file}", 'w') as f:
         pass
 if b2:
     y = glob.glob("scr/*")
