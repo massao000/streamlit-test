@@ -2,6 +2,7 @@ import streamlit as st
 import os
 import glob
 import uuid
+import re
 
 b1 = st.button("作成")
 b2 = st.button("消去")
@@ -20,5 +21,5 @@ if b2:
 st.write(glob.glob(f'{os.path.dirname(__file__)}'))
 st.write(glob.glob("scr/*"))
 st.write(glob.glob("test/*"))
-for i in glob.glob("scr/*.mp4"):
+for i in glob.glob(f"scr/*.{re.much(["mp3 mp4 wav"])}"):
     st.audio(i)
