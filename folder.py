@@ -24,4 +24,5 @@ st.write(glob.glob("test/*"))
 
 for i in glob.glob(f"scr/*"):
     m = re.match('[mp3 mp4 wav]', i)
-    st.audio(m.group())
+    st.write(m.group())
+    # st.audio(m.group())
