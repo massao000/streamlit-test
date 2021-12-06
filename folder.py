@@ -9,7 +9,10 @@ if b1:
     x = str(uuid.uuid1())
     with open(f"scr/{x}", 'w') as f:
         pass
-
+if b2:
+    y = glob.glob("scr/*")
+    for i in y:
+        os.remove(y)
 
 st.write(glob.glob(f'{os.path.dirname(__file__)}'))
 st.write(glob.glob("scr/*"))
