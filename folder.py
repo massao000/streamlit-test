@@ -13,7 +13,7 @@ if b1:
 if b2:
     y = glob.glob("scr/*")
     for i in y:
-        os.remove(y)
+        os.remove()
 
 st.write(glob.glob(f'{os.path.dirname(__file__)}'))
 st.write(glob.glob("scr/*"))
