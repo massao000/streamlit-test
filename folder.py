@@ -7,7 +7,8 @@ b1 = st.button("test")
 
 if b1:
     x = str(uuid.uuid1())
-    os.mkdir(x)
+    with open(f"scr/{x}", 'w') as f:
+        pass
 
 
 st.write(glob.glob(f'{os.path.dirname(__file__)}'))
