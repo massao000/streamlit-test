@@ -11,3 +11,4 @@ if b1:
 
 
 st.write(glob.glob(f'{os.path.dirname(__file__)}'))
+st.write(glob.glob("scr/*"))
