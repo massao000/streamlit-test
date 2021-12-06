@@ -5,6 +5,8 @@ import uuid
 
 b1 = st.button("作成")
 b2 = st.button("消去")
+file = st.file_uploader("", type=["mp3", 'wav', "mp4"])
+st.audio(file)
 
 if b1:
     x = str(uuid.uuid1())
