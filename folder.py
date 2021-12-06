@@ -21,5 +21,5 @@ if b2:
 st.write(glob.glob(f'{os.path.dirname(__file__)}'))
 st.write(glob.glob("scr/*"))
 st.write(glob.glob("test/*"))
-for i in glob.glob(f"scr/*.{re.much('[mp3 mp4 wav]')}"):
+for i in glob.glob(f"scr/*.{re.match('[mp3 mp4 wav]')}"):
     st.audio(i)
